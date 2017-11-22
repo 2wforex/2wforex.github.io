@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html>
+<head >
+
+<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+
+  <link rel="stylesheet" type="text/css" href="styleindex1.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<script>
+
+
+jQuery(function ($) {
+
+var $window = $(window),
+    $navbar = $('.te');
+
+function resize() {
+              $(".navbar-toggler-icon").click(function(){
+        $navbar.show();
+    });
+  
+    if ($window.width() <969.8){
+$navbar.click(function(){
+    $navbar.hide();
+});
+
+          } else if ($window.width() > 969.9){
+    $navbar.show();
+        }
+}
+
+ $window.resize(resize)
+        .trigger('resize');
+});
+
+
+
+
+jQuery(function ($) {
+
+var $window = $(window),
+    $pic = $('.pic');
+
+function resize() {
+    if ($window.width() > 556.5){
+        $pic.removeClass("pic");      
+
+    } else if ($window.width() < 556.5){
+        $pic.addClass("pic");
+
+        }
+}
+
+ $window.resize(resize)
+        .trigger('resize');
+});
+
+jQuery(function ($) {
+
+var $window = $(window),
+    $mid = $('.mid');
+
+function resize() {
+    if ($window.width() > 767.5) {
+        $mid.removeClass("mid");      
+        $mid.addClass("mid1");
+
+    } else if ($window.width() < 767.5) {
+        $mid.addClass("mid");
+        $mid.removeClass("mid1");      
+
+        }
+}
+
+ $window.resize(resize)
+        .trigger('resize');
+});
+
+jQuery(function ($) {
+
+var $window = $(window),
+    $em = $('.em');
+
+function resize() {
+    if ($window.width() < 518) {
+        $em.removeClass("em");      
+        $em.addClass("em1");
+
+    } else if ($window.width() > 518) {
+        $em.addClass("em");
+        $em.removeClass("em1");      
+
+        }
+}
+
+ $window.resize(resize)
+        .trigger('resize');
+});
+
+jQuery(function ($) {
+
+var $window = $(window),
+    $wimg = $('.wimg'),
+  $centerimg = $('.centerimg')
+
+function resize() {
+    if ($window.width() > 318) {
+        $wimg.removeClass("wimg");      
+        $wimg.addClass("wimg1");
+      $centerimg.addClass("centerimg");
+
+    } else if ($window.width() < 318) {
+        $wimg.addClass("wimg");
+        $wimg.removeClass("wimg1");      
+      $centerimg.removeClass("centerimg");
+
+        }
+}
+
+ $window.resize(resize)
+        .trigger('resize');
+});
+
+function showImage(imgName) {
+    document.getElementById('largeImg').src = imgName;
+    showLargeImagePanel();
+    unselectAll();
+}
+function showLargeImagePanel() {
+    document.getElementById('largeImgPanel').style.visibility = 'visible';
+}
+function unselectAll() {
+    if(document.selection) document.selection.empty();
+    if(window.getSelection) window.getSelection().removeAllRanges();
+}
+function hideMe(obj) {
+    obj.style.visibility = 'hidden';
+}
+
+	
+$(document).ready(function() {
+  
+  $(window).scroll(function () {
+      //if you hard code, then use console
+      //.log to determine when you want the 
+      //nav bar to stick.  
+      console.log($(window).scrollTop())
+    if ($(window).scrollTop() > 1) {
+      $('#nav_bar').addClass('navbar-fixed');
+    }
+    if ($(window).scrollTop() < 1) {
+      $('#nav_bar').removeClass('navbar-fixed');
+    }
+  });
+});
+
+
+
+//Default active on home
+$('#s1').addClass("active");
+
+
+/*
+Smooth scrolling
+*/
+$("#s1").click(function() {
+     $('html, body').animate({
+         scrollTop:        $("#1").offset().top-65
+     }, 1000);
+  return false;
+ });
+
+$("#s2").click(function() {
+     $('html, body').animate({
+         scrollTop:        $("#2").offset().top-100
+     }, 1000);
+  return false;
+ });
+
+$("#s3").click(function() {
+     $('html, body').animate({
+         scrollTop:        $("#3").offset().top-100
+     }, 1000);
+  return false;
+ });
+
+
+
+/*$('#2').waypoint(function(event, direction) {
+
+  $(".nav-container ul li").children().removeClass("active");
+  $("#s2").addClass("active");
+  
+  if (direction === 'down') {
+    offset = 90;
+  } 
+  else {
+    offset = 20;
+  }
+});*/
+
+
+/*
+Using jquery waypoints to change active on scroll
+*/
+$('#2').waypoint(function() {
+
+  $(".navbar-nav a").removeClass("active");
+  $("#s2").addClass("active");
+  
+}, { offset: 101 });
+
+
+$('#3').waypoint(function() {
+  $(".navbar-nav a").removeClass("active");
+  $("#s3").addClass("active");
+}, { offset: 101 });
+
+
+
+$('#1').waypoint(function() {
+  $(".navbar-nav a").removeClass("active");
+  $("#s1").addClass("active");
+}, { offset: 0 });
+
+$('#2').waypoint(function() {
+  $(".to-top").addClass("visible");
+}, { offset: 100 });
+
+$('#1').waypoint(function(event, direction) {
+  $(".to-top").removeClass("visible");
+}, { offset: 30 });
+</script>
+
+
+
+<body>
+<nav id="nav_bar" class="navbar navbar-expand-lg navbar-light bg-info navbar-fixed-top">
+  <div class="container">
+  <a target="_blank"class="navbar-brand text-white" href="https://codepen.io/kek388/">JiaHueiKek's codepen</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+    <div class="navbar-nav  text-center ml-auto ">
+      <a id="s1" class="te nav-item nav-link text-dark" href="#1">About</a>
+      <a id="s2" class="te nav-item nav-link text-dark" href="#2">Profolio</a>
+      <a id="s3" class="te nav-item nav-link text-dark" href="#3">Contact</a>
+    </div>
+    </div>
+  </div>
+</nav>
+
+<div id="1" class="container">
+  <pre></pre>
+ <div class="row">
+   <div class="col-sm-4">
+     <img src="https://scontent.fkul13-1.fna.fbcdn.net/v/t1.0-9/22780601_1703090626399933_3309094992979947247_n.jpg?oh=f493d1f806ca034e29205768695c2dab&oe=5A9DD7BE" class="mx-auto d-block rounded-circle pic" width=100%>
+   </div>
+   <div class="col-sm-8 mid">
+     <p class="text-center infoword">5 Years of working experience in Sales and Marketing in stationery industry<br>
+       1 Year as Front-End-Developer 
+       </p>
+     <hr>
+     <p class="text-center infoword"><b>Skill : Web-Developer , Digital Marketing</b></p>
+     </div>
+   </div>
+  </div>
+</div>
+
+<div id="2" class="container">
+  <p class="text-center pfw">Portfolio</p>
+  <div class="row">
+    <div class="col-sm-6">
+      <a target="_blank" href="https://kek388.github.io/"><img src="https://scontent.fkul8-1.fna.fbcdn.net/v/t35.0-12/23484785_1718640388178290_1547978803_o.png?oh=eadfb75006b4ce2c89fe1932526b8b55&oe=5A07FB2E" width=100%></a>
+    </div>
+    <div class="col-sm-6"><a target="_blank" href="https://codepen.io/kek388/full/xPRRRO/"><img src="https://scontent.fkul8-1.fna.fbcdn.net/v/t35.0-12/23483016_1718645628177766_1973090594_o.png?oh=7d88830613fcded7d857f740976755b6&oe=5A07D45A" target="_blank" width=100%></a>
+    </div>
+  </div>
+</div>
+
+<div id="3" class="container">
+    <p class="text-center cw">Contact</p>
+  <p class="text-center cw1">Want to get in touch with me?<br>
+    Assign project, request resume?<br>
+    You can email me at
+  </p>
+  <div class="row">
+    <div class="col-sm-12">
+      <p class="text-center em"><b>kekooii@hotmail.com</b></p>
+    </div>
+  </div>
+</div>
+<div class="arwbg">
+<div class="container">
+<div class="row">
+  <div class="col-sm-12 arw">
+    <p class="arwt text-center"><b>AROUND THE WEB</b></p><br>
+    <div class="centerimg">
+    <a href="https://web.facebook.com/kek.huei" target="_blank"><img class="wimg" src="https://scontent.fkul5-1.fna.fbcdn.net/v/t34.0-12/23513398_1718890464819949_2120395183_n.png?oh=3f8dc19a17b6eb3b186e20c7bb8081f7&oe=5A0794ED"></a>
+        <a href="https://www.instagram.com/kek388/" target="_blank"><img class="wimg" src="https://scontent.fkul5-1.fna.fbcdn.net/v/t34.0-12/23439503_1718890468153282_1113721676_n.jpg?oh=51e2b3794df36e5a360461db13481531&oe=5A07FE38"></a>
+        <a href="https://www.linkedin.com/in/jia-huei-kek-64b465150/" target="_blank"><img class="wimg" src="https://scontent.fkul5-1.fna.fbcdn.net/v/t34.0-12/23439497_1718890454819950_562594172_n.png?oh=c1892626ca25239a5b6f66efb1bf0c07&oe=5A07FA92"></a>
+              <img class="wimg" src="https://scontent.fkul5-1.fna.fbcdn.net/v/t34.0-12/23476337_1718890458153283_1705271927_n.jpg?oh=f512fb7b44edd74513a8348a08431384&oe=5A07C943" alt="work1" 
+      style="cursor:pointer" onclick="showImage('https://scontent.fkul5-1.fna.fbcdn.net/v/t34.0-12/23439410_1718963558145973_1256847069_n.jpg?oh=8c1121dc30865ae7c950a80773e131e0&oe=5A08251B');">
+      <div id="largeImgPanel" onclick="hideMe(this);">
+      <img id="largeImg">
+      </div>
+  </div>
+  </div>
+  </div>
+  </div>
+</div>
+
+<p class="text-center final">Copyright &copy JiaHuei KEK 2017</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<scipt src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js" ></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/1.1.6/waypoints.min.js" ></script>
+
+
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+
+</body>
+</html>

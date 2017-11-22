@@ -1,0 +1,158 @@
+
+
+.navbar-fixed {
+    top: 0;
+    z-index: 100;
+  position: fixed;
+    width: 100%;
+}
+.{
+  height:0.00000000000001px !important;
+  font-size:0.000000000001px !important;
+}
+.active{
+  background-color:white;
+  color:black;
+}
+.navbar-nav a:hover{
+  background-color:white;
+  opacity:0.48;
+}
+.mid{
+  margin-top:18px;
+  font-size:12.8px;
+}
+.mid1{
+  margin-top:38px;
+  font-size:20.8px;}
+
+.pic{
+  width:48%;
+}
+.infoword{
+  color:cadetblue;
+}
+.pfw{
+  color:white;
+  width:100%;
+  background-color:lawngreen;
+  margin-top:48px;
+  font-size:38px;
+  
+}
+.cw{
+  color:white;
+  width:100%;
+  background-color:limegreen;
+  margin-top:48px;
+  font-size:38px;
+  
+}
+.cw1{
+  font-size:21.8px;
+  color:mediumseagreen;
+}
+.em{
+  font-size:24.8px;
+  margin:auto;
+  width:60%;
+ border:6.8px solid greenyellow; 
+  border-radius:18px;
+  
+  	animation: em 5s linear 0s infinite ;
+	animation-play-state:running;
+
+	-webkit-animation: em 5s linear 0s infinite ;
+	-webkit-animation-play-state:running;
+}
+.em1{
+  font-size:14.8px;
+  margin:auto;
+  width:100%;
+ border:1.8px solid greenyellow; 
+  border-radius:18px;
+  
+  	animation: em 5s linear 0s infinite ;
+	animation-play-state:running;
+
+	-webkit-animation: em 5s linear 0s infinite ;
+	-webkit-animation-play-state:running;
+}
+@-webkit-keyframes em {
+     0% { color:forestgreen;}
+     1% { color:mediumseagreen;}
+     32% { color:olive;}
+     49% { color:seagreen;}
+     100% { color:green;}
+	}
+
+@keyframes em {
+     0% { color:forestgreen;}
+     1% { color:mediumseagreen;}
+     32% { color:olive;}
+     49% { color:seagreen;}
+     100% { color:green;}
+	}	
+.arw{
+  margin:none;
+  height:238px;
+}
+
+.arwbg{
+  margin-top:38px;
+   background-color:darkseagreen;
+}
+.arwt{
+  margin-top:28px;
+  color:white;
+  font-size:28px;
+}
+
+.wimg{
+    margin-left:2%;
+  width:20%;
+  border-radius:10px;
+}
+.wimg1:hover{
+  border-radius:50%;
+}
+.wimg1{
+   border-radius:10px;
+  width:49.8px;
+  height:49.8px;
+    margin:8px;
+}
+.centerimg{
+  display: flex;
+    justify-content:center;
+        display: -webkit-flex;
+            -webkit-justify-content:center;
+}
+.final{
+  margin-top:18px;
+  width:100%;
+  background-color:white;
+  color:seagreen
+}
+
+#largeImgPanel {
+    text-align: center;
+    visibility: hidden;
+    position: fixed;
+    z-index: 10;
+    top: 0; left: 0; 
+    width:100%;
+    height:100%; 
+    background-color: rgba(100,100,100, 0.5);
+}
+
+#largeImg  {
+	margin-top:20.8vh;
+    height: 63.8vh;
+    max-width: 100vw;
+  z-index:1000;
+}
+
+
+
+
