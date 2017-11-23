@@ -511,7 +511,7 @@ position:absolute;
 
 @-webkit-keyframes dash-check2 {
    0% {opacity:0;}
-  27.5% {opacity:1;stroke-dashoffset:-100;}
+  27.5% {opacity:0;stroke-dashoffset:-100;}
   30% {opacity:1;stroke-dashoffset: 900;}
   96.8% {opacity:1;stroke-dashoffset: 900;}
   100%{opacity:1;stroke-dashoffset: 900;}
@@ -519,7 +519,7 @@ position:absolute;
 
 @keyframes dash-check2 {
    0% {opacity:0;}
-  27.5% {opacity:1;stroke-dashoffset:-100;}
+  27.5% {opacity:0;stroke-dashoffset:-100;}
   30% {opacity:1;stroke-dashoffset: 900;}
   96.8% {opacity:1;stroke-dashoffset: 900;}
   100%{opacity:1;stroke-dashoffset: 900;}
@@ -531,16 +531,16 @@ position:absolute;
   }
 
 @-webkit-keyframes dash-check3 {
-   0% {opacity:1;}
-  32.5% {opacity:1;stroke-dashoffset:-100;}
+   0% {opacity:0;}
+  32.5% {opacity:0;stroke-dashoffset:-100;}
   35% {opacity:1;stroke-dashoffset: 900;}
   96.8% {opacity:1;stroke-dashoffset: 900;}
   100%{opacity:1;stroke-dashoffset: 900;}
 }
 
 @keyframes dash-check3 {
-   0% {opacity:1;}
-  32.5% {opacity:1;stroke-dashoffset:-100;}
+   0% {opacity:0;}
+  32.5% {opacity:0;stroke-dashoffset:-100;}
   35% {opacity:1;stroke-dashoffset: 900;}
   96.8% {opacity:1;stroke-dashoffset: 900;}
   100%{opacity:1;stroke-dashoffset: 900;}
@@ -552,16 +552,16 @@ position:absolute;
   }
 
 @-webkit-keyframes dash-check4 {
-   0% {opacity:1;}
-  37.5% {opacity:1;stroke-dashoffset:-100;}
+   0% {opacity:0;}
+  37.5% {opacity:0;stroke-dashoffset:-100;}
   40% {opacity:1;stroke-dashoffset: 900;}
   96.8% {opacity:1;stroke-dashoffset: 900;}
   100%{opacity:1;stroke-dashoffset: 900;}
 }
 
 @keyframes dash-check4 {
-   0% {opacity:1;}
-  37.5% {opacity:1;stroke-dashoffset:-100;}
+   0% {opacity:0;}
+  37.5% {opacity:0;stroke-dashoffset:-100;}
   40% {opacity:1;stroke-dashoffset: 900;}
   96.8% {opacity:1;stroke-dashoffset: 900;}
   100%{opacity:1;stroke-dashoffset: 900;}
@@ -573,16 +573,16 @@ position:absolute;
   }
 
 @-webkit-keyframes dash-check5 {
-   0% {opacity:1;}
-  42.5% {opacity:1;stroke-dashoffset:-100;}
+   0% {opacity:0;}
+  42.5% {opacity:0;stroke-dashoffset:-100;}
   45% {opacity:1;stroke-dashoffset: 900;}
   96.8% {opacity:1;stroke-dashoffset: 900;}
   100%{opacity:1;stroke-dashoffset: 900;}
 }
 
 @keyframes dash-check5 {
-   0% {opacity:1;}
-  42.5% {opacity:1;stroke-dashoffset:-100;}
+   0% {opacity:0;}
+  42.5% {opacity:0;stroke-dashoffset:-100;}
   45% {opacity:1;stroke-dashoffset: 900;}
   96.8% {opacity:1;stroke-dashoffset: 900;}
   100%{opacity:1;stroke-dashoffset: 900;}
@@ -594,16 +594,16 @@ position:absolute;
   }
 
 @-webkit-keyframes dash-check6 {
-   0% {opacity:1;}
-  47.5% {opacity:1;stroke-dashoffset:-100;}
+   0% {opacity:0;}
+  47.5% {opacity:0;stroke-dashoffset:-100;}
   50% {opacity:1;stroke-dashoffset: 900;}
   96.8% {opacity:1;stroke-dashoffset: 900;}
   100%{opacity:1;stroke-dashoffset: 900;}
 }
 
 @keyframes dash-check6 {
-   0% {opacity:1;}
-  47.5% {opacity:1;stroke-dashoffset:-100;}
+   0% {opacity:0;}
+  47.5% {opacity:0;stroke-dashoffset:-100;}
   50% {opacity:1;stroke-dashoffset: 900;}
   96.8% {opacity:1;stroke-dashoffset: 900;}
   100%{opacity:1;stroke-dashoffset: 900;}
@@ -615,16 +615,16 @@ position:absolute;
   }
 
 @-webkit-keyframes dash-check7 {
-   0% {opacity:1;}
-  52.5% {opacity:1;stroke-dashoffset:-100;}
+   0% {opacity:0;}
+  52.5% {opacity:0;stroke-dashoffset:-100;}
   55% {opacity:1;stroke-dashoffset: 900;}
   96.8% {opacity:1;stroke-dashoffset: 900;}
   100%{opacity:1;stroke-dashoffset: 900;}
 }
 
 @keyframes dash-check7 {
-   0% {opacity:1;}
-  52.5% {opacity:1;stroke-dashoffset:-100;}
+   0% {opacity:0;}
+  52.5% {opacity:0;stroke-dashoffset:-100;}
   55% {opacity:1;stroke-dashoffset: 900;}
   96.8% {opacity:1;stroke-dashoffset: 900;}
   100%{opacity:1;stroke-dashoffset: 900;}
