@@ -490,7 +490,7 @@ position:absolute;
 
 @-webkit-keyframes dash-check1 {
    0% {opacity:0;}
-  22.5% {opacity:1;stroke-dashoffset:-100;}
+  22.5% {opacity:0;stroke-dashoffset:-100;}
   25% {opacity:1;stroke-dashoffset: 900;}
   96.8% {opacity:1;stroke-dashoffset: 900;}
   100%{opacity:1;stroke-dashoffset: 900;}
@@ -498,7 +498,7 @@ position:absolute;
 
 @keyframes dash-check1 {
    0% {opacity:0;}
-  22.5% {opacity:1;stroke-dashoffset:-100;}
+  22.5% {opacity:0;stroke-dashoffset:-100;}
   25% {opacity:1;stroke-dashoffset: 900;}
   96.8% {opacity:1;stroke-dashoffset: 900;}
   100%{opacity:1;stroke-dashoffset: 900;}
