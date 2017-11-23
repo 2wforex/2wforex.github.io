@@ -842,12 +842,10 @@ position:absolute;
 @-webkit-keyframes purchaseani{
 	0%{opacity:0;}
 	20%{opacity:0;}	
-	60%{opacity:0;margin-left:-80px;}
-	65%{opacity:1;margin-left:18px;}
-	66%{opacity:1;margin-left:-18px;}
-	67%{opacity:1;margin-left:8px;}
-	68%{opacity:1;margin-left:0px;}	
-	100%{opacity:1;margin-left:0px;}
+	59.99%{opacity:0;margin-top:0px;}
+	60%{opacity:0;margin-top:-88.8px;}
+	65%{opacity:1;margin-top:0px;}
+	100%{opacity:1;margin-top:0px;}
 }
 
 .line {
